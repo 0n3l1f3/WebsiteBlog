@@ -1,0 +1,265 @@
+/* Selection Menu */
+body {
+    background-color: #e8e8e8;
+    overflow: hidden
+}
+
+.mainLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.mainLogo img {
+    width: 160px;
+}
+
+.homeList {
+    display: flex;
+    justify-content: space-between; /* Ensures spacing between columns */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    width: 80%; /* Adjust width as needed */
+    margin: 100px auto; /* Center the container */
+    gap:40px;
+}
+
+.homeList .left,
+.homeList .right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between items in a column */
+    flex: 1; /* Ensures equal space for columns */
+}
+
+.homeList .left {
+    align-items: flex-end; /* Right-align items in the left column */
+}
+
+.homeList .right {
+    align-items: flex-start; /* Left-align items in the right column */
+}
+
+.gallery, .aboutMe, .commission, .store {
+    width: 243px;
+    height: 87.38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    border: 1px solid #000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.gallery:hover, .aboutMe:hover, .commission:hover, .store:hover {
+    background-color: white;
+}
+
+.gallery a, .aboutMe a, .commission a, .store a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.gallery a span, .aboutMe a span, .commission a span, .store a span {
+    position: relative;
+    color: inherit;
+    background-image: linear-gradient(#000, #000);
+    background-size: 0% 0.1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+}
+
+.gallery a:hover span, .aboutMe a:hover span, .commission a:hover span, .store a:hover span {
+    background-size: 100% 0.1em;
+}
+
+.social-login-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    -webkit-box-reflect: below 5px linear-gradient(transparent, #00000055);
+    transform: translate(0px, -140px);
+    margin-left: 20px;
+   
+    }
+  .social-login-icons svg {
+    width: 40px;
+  }
+  
+  .social-icon-1,
+  .social-icon-1-1,
+  .social-icon-2,
+  .social-icon-2-2,
+  .social-icon-3,
+  .social-icon-3-3 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin: 20px 0 0px 0;
+  }
+  
+  .icon svg {
+    fill: #111;
+  }
+  
+  .socialcontainer {
+    height: 80px;
+    overflow: hidden;
+  }
+  .social-icon-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0);
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+  }
+  .social-icon-1 svg,
+  .social-icon-2 svg,
+  .social-icon-3 svg 
+    {
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.2s;
+  }
+  .social-icon-1-1 {
+    transition-duration: 0.4s;
+    background-color: rgb(0, 0, 0, 0);
+  }
+  .socialcontainer:hover .social-icon-1 {
+    transform: translateY(-70px);
+  }
+  .socialcontainer:hover .social-icon-1 svg,
+  .socialcontainer:hover .social-icon-2 svg,
+  .socialcontainer:hover .social-icon-3 svg
+  {
+    opacity: 1;
+  }
+  .social-icon-2 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: linear-gradient(
+      72.44deg,
+      #ff7a00 11.92%,
+      #ff0169 51.56%,
+      #d300c5 85.69%
+    );
+  }
+  .socialcontainer:hover .social-icon-2 {
+    transform: translateY(-70px);
+  }
+  .social-icon-3 {
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.46, -0.78, 0.5, 1.56);
+    background: #000;
+  }
+  
+  .socialcontainer:hover .social-icon-3 {
+    transform: translateY(-70px);
+  }
+  
+@media (max-width:1024px)
+{
+    body {
+        background-color: #e8e8e8;
+        overflow: hidden;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        gap: 50px;
+        flex-direction: column;
+    }
+    .mainLogo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .mainLogo img {
+        width: 450px;
+    }
+    .homeList{
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        gap: 20px;
+        flex-direction: column;
+    }
+    .homeList .left,
+    .homeList .right {
+    position:relative;
+    align-items: center;
+    justify-content:center;
+    }
+
+    .homeList .left 
+    {
+    align-items: center;
+    }
+
+    .homeList .right 
+    {
+    align-items: center;
+    }
+    .gallery, .aboutMe, .commission, .store {
+        width: 500px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d9d9d9;
+        border: 1px solid #000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+    }
+    .gallery:hover, .aboutMe:hover, .commission:hover, .store:hover {
+        background-color: white;
+    }
+    .gallery a, .aboutMe a, .commission a, .store a {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        color: #000;
+    }
+    .gallery a span, .aboutMe a span, .commission a span, .store a span {
+        position: relative;
+        color: inherit;
+        background-image: linear-gradient(#000, #000);
+        background-size: 0% 0.1em;
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        transition: background-size 0.3s ease-in-out;
+    }
+    .social-login-icons {
+        transform: scale(1.5); /* Scales all content, including children */
+      }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    } 
+} 
+  

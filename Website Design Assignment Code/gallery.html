@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <link rel="stylesheet" href="gallery.css">
+  <script src="gallertJS.js" defer></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <title>YNDS</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbarLogo"><a href = "index.html"><img src="images/logo.png"></a></div>
+    <div class="navbarmenu">
+      <div class="home"><a href="index.html"><span>Home</span></a></div>
+      <div class="gallery"><a href="gallery.html"><span>Gallery</span></a></div>
+      <div class="aboutMe"><a href="aboutUs.html"><span>About Me</span></a></div>
+      <div class="commission"><a href="commission.html"><span>Commission</span></a></div>
+      <div class="store"><a href="Store.html"><span>Store</span></a></div>
+    </div>
+    <label class="containerPhone">
+      <input type="checkbox">
+      <div class="checkmark">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </label>
+    <div class = 'phoneMenu'>
+      <div class="home"><a href="index.html"><span>Home</span></a></div>
+      <div class="gallery"><a href="gallery.html"><span>Gallery</span></a></div>
+      <div class="aboutMe"><a href="aboutUs.html"><span>About Me</span></a></div>
+      <div class="commission"><a href="commission.html"><span>Commission</span></a></div>
+      <div class="store"><a href="Store.html"><span>Store</span></a></div>
+    </div>
+  </div>
+
+
+  <!-- SERIES A -->
+  <div class="container">
+    <div class="containerA">
+      <div class="arrow-down" onclick="openDropdown('dropdownA')">
+        <img src="images/arrow-down.png" alt="#">
+      </div>
+      <span>SERIES A</span>
+    
+  </div>
+  <div class="imageScroller" id="dropdownA">
+    <button class="arrow arrow-left">&#9665;</button>
+    <div class="scroller">
+      <div class="item" data-index="1"><img src="images/redDummyImage.png" alt="#"></div>
+      <div class="item" data-index="2"><img src="images/witchDummyImage.png" alt="#"></div>
+      <div class="item active" data-index="3"><img src="images/dragonDummyImage.png" alt="#"></div>
+      <div class="item active" data-index="4"><img src="images/knightsFigthing.png" alt="#"></div>
+    </div>
+    <button class="arrow arrow-right">&#9655;</button>
+  </div>
+
+  <!-- SERIES B -->
+  <div class="containerB">
+    <div class="arrow-down" onclick="openDropdown('dropdownB')">
+      <img src="images/arrow-down.png" alt="#">
+    </div>
+    <span>SERIES B</span>
+  </div>
+  <div class="imageScroller" id="dropdownB">
+    <button class="arrow arrow-left">&#9665;</button>
+    <div class="scroller">
+      <div class="item" data-index="1"><img src="images/redDummyImage.png" alt="#"></div>
+      <div class="item" data-index="2"><img src="images/witchDummyImage.png" alt="#"></div>
+      <div class="item active" data-index="3"><img src="images/dragonDummyImage.png" alt="#"></div>
+    </div>
+    <button class="arrow arrow-right">&#9655;</button>
+  </div>
+
+  <!-- SERIES C -->
+  <div class="containerC">
+    <div class="arrow-down" onclick="openDropdown('dropdownC')">
+      <img src="images/arrow-down.png" alt="#">
+    </div>
+    <span>SERIES C</span>
+  </div>
+  <div class="imageScroller" id="dropdownC">
+    <button class="arrow arrow-left">&#9665;</button>
+    <div class="scroller">
+      <div class="item" data-index="1"><img src="images/redDummyImage.png" alt="Dummy Image"></div>
+      <div class="item" data-index="2"><img src="images/witchDummyImage.png" alt="Dummy Image"></div>
+      <div class="item active" data-index="3"><img src="images/dragonDummyImage.png" alt="Dummy Image"></div>
+    </div>
+    <button class="arrow arrow-right">&#9655;</button>
+  </div>
+</div>
+<div class = "video">
+<h2>Please feel free to subscribe to <a href = "https://www.youtube.com/">my youtube channel</a>: </h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RXbbEKLKiF4?si=reCXJvFyxTEd5lws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="aboutUs.css">
+  <link rel="stylesheet" href="commission.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="gallertJS.js" defer></script>
+  <title>YNDS</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbarLogo"><a><img src="images/logo.png"></a></div>
+    <div class="navbarmenu">
+      <div class="home"><a href="index.html"><span>Home</span></a></div>
+      <div class="gallery"><a href="gallery.html"><span>Gallery</span></a></div>
+      <div class="aboutMe"><a href="aboutUs.html"><span>About Me</span></a></div>
+      <div class="commission"><a href="commission.html"><span>Commission</span></a></div>
+      <div class="store"><a href="Store.html"><span>Store</span></a></div>
+    </div>
+    <label class="containerPhone">
+      <input type="checkbox">
+      <div class="checkmark">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </label>
+    <div class = 'phoneMenu'>
+      <div class="home"><a href="index.html"><span>Home</span></a></div>
+      <div class="gallery"><a href="gallery.html"><span>Gallery</span></a></div>
+      <div class="aboutMe"><a href="aboutUs.html"><span>About Me</span></a></div>
+      <div class="commission"><a href="commission.html"><span>Commission</span></a></div>
+      <div class="store"><a href="Store.html"><span>Store</span></a></div>
+    </div>
+  </div>
+  <h1>Send me a messsage</h1>
+  <form>
+    <div class="input">
+    <div class="left"> 
+        <label for="fname"> First Name:</label><br>
+        <input type="text" id ="fname" name ="fname"><br>
+        <label for="lname"> Second Name:</label><br>
+        <input type="text" id ="lname" name ="lname"><br>
+        <label for="email"> Email:</label><br>
+        <input type="email" id ="email" name ="email"><br>
+        <label for="request"> Request Type:</label><br>
+        <select id ="request" name ="requestType">
+            <option value="design">Brand Logo design</option>
+            <option value="halfArt">Half Art Piece</option>
+            <option value="fullArt">Full Art</option>
+            <option value="Other">Other</option>
+    </select>
+    </div>
+    
+    <div class="right">
+        <label for="Info"> More information</label><br>
+        <input type="text" id ="info" name ="info"><br> 
+
+        <div class="button">
+            <!--<label for="submit">Submit</label>-->
+            <input type="submit" id="submit" value="Submit">
+        </div>
+    </div>
+    </div>
+  </form>
+  <h1>You can also contact through my socials</h1>
+  <div class = "socialsIcon">
+    <div class = "instagram">
+    <a href = "https://www.instagram.com/"><img src="images/instagram.png" alt ="instagram image link"></a>
+    </div>
+    <div class = "tiktok">
+    <a href= "https://www.tiktok.com/login"><img src="images/tik-tok.png" alt ="tiktok image link"></a>
+    </div>
+    <div class = "twitter">
+    <a href = "https://x.com/?lang=en"><img src="images/twitter.png" alt ="twitter image link"></a>
+    </div>
+</div>
+
+</body>
+
+</html>
