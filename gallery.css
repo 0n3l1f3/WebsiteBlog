@@ -1,0 +1,461 @@
+body {
+    background-color: #e8e8e8;
+    font-family: "Roboto", sans-serif;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    background-color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height:50px;
+    width:auto;
+
+}
+.navbarLogo{
+    float: left;
+}
+.navbarLogo a {
+    width: 100%;
+    height:100%;
+}
+
+.navbarLogo img{
+    width: 40px;
+    margin: 5px 20px auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navbarmenu{
+    float:right;
+    display:inherit;
+    gap: 90px; /* Space between items in a column */
+    margin-right: 22%;
+}
+
+a {
+    text-decoration: none;
+    color:white
+}
+.home,.gallery,.aboutMe,.commission,.store{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Karla';
+    color: white;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .containerA, .containerB, .containerC {
+    width: 90%;
+    max-width: 1290px;
+    height: 40px;
+    display: flex;
+    align-items: center;  /* This centers the items vertically */
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Karla';
+    background: #FBF8F8;
+    border-radius: 50px;
+    margin: 20px auto;
+    position: relative; /* Positioning context for the arrow */
+}
+.arrow-down {
+    position: absolute; /* Position the arrow inside the container */
+    left: 10px; /* Adjust this value to move the arrow image further left or right */
+    display: flex;
+    align-items: center; /* This centers the image vertically */
+}
+
+.arrow-down img {
+    width: 30px; /* Adjust the size of the arrow */
+    height: auto;
+}
+
+.imageScroller {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0 0 10px;
+} 
+
+.imageScroller.show {
+    display: flex; /* Ensure it appears */
+}
+   
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #900c3f;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    color: black;
+}
+
+.imageScroller img {
+    width:100px;
+    border-radius:25%;
+}
+ 
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    background-color: #900c3f;
+    margin: 0 10px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.item:nth-child(1),
+.item:nth-child(5) {
+    width: 50px;
+    height: 50px;
+}
+
+.item:nth-child(2),
+.item:nth-child(4) {
+    width: 80px;
+    height: 80px;
+}
+
+.item.active {
+    width: 120px;
+    height: 120px;
+}
+
+.scroller {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.arrow {
+    font-size: 100px;
+}
+/* From Uiverse.io by NAKAMOZ */ 
+/* Hide the default checkbox */
+.containerPhone input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .containerPhone {
+    display: none;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+  }
+  
+  .checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+  }
+  
+  .checkmark span {
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+  }
+  
+  .checkmark span:nth-child(1) {
+    top: 10%;
+  }
+  
+  .checkmark span:nth-child(2) {
+    top: 50%;
+  }
+  
+  .checkmark span:nth-child(3) {
+    top: 90%;
+  }
+  
+  .containerPhone input:checked + .checkmark span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    -moz-transform: translateY(-50%) rotate(45deg);
+    -ms-transform: translateY(-50%) rotate(45deg);
+    -o-transform: translateY(-50%) rotate(45deg);
+  }
+  
+  .containerPhone input:checked + .checkmark span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+    -moz-transform: translateY(-50%) rotate(-45deg);
+    -ms-transform: translateY(-50%) rotate(-45deg);
+    -o-transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  .containerPhone input:checked + .checkmark span:nth-child(3) {
+    transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
+    opacity: 0;
+  }
+
+
+/* Lightbox Styling */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#lightbox.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.lightbox-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.lightbox-content img {
+    max-width: 50%;
+    max-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.prev, .next {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+    color: #ffcc00;
+}
+
+.phoneMenu{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background: black;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    z-index: 1000;
+}
+
+.phoneMenu.show {
+    display:block;
+    margin-bottom:40px
+}
+
+/* Default arrow position */
+.arrow-down img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Rotate arrow when dropdown is open */
+.arrow-down img.rotate {
+    transform: rotate(180deg);
+}
+
+.video{
+    width: 100%;
+    text-align: center;
+    border-style: solid;
+    border-width: medium
+}
+
+.video h2 a{
+    color:black;
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    /* Adjust Navbar */
+    .navbar {
+        height: 150px; /* Thicker navbar */
+        width: 100%; /* Full width */
+        padding: 0 10px; /* Add some padding */
+        border-radius: 0; /* Remove border radius for a more compact look */
+        
+    }
+
+    /* Logo inside the navbar */
+    .navbarLogo img {
+        width: 100px; /* Slightly smaller logo for phone */
+        margin: auto 10px; /* Adjust margins for phone */
+    }
+
+    /* Adjust navbar menu (hide and show) */
+    .navbarmenu {
+        display: none; /* Hide for mobile view, as it's shown in phoneMenu */
+    }
+
+    /* Adjust Phone Menu Button */
+    .containerPhone {
+        display: inherit;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .phoneMenu span{
+        font-size:32px;
+    }
+
+    /* Adjust the dropdown containers (Series A, B, C) */
+    .containerA, .containerB, .containerC {
+        width: 80%; /* Slightly smaller width for mobile */
+        max-width: 500px; /* Set a max-width for better control */
+        height: 150px; /* Slightly taller for easier tap targets */
+    }
+
+    /* Adjust text size for better visibility */
+    .containerA span, .containerB span, .containerC span {
+        font-size: 60px; /* Smaller text for mobile */
+    }
+
+    /* Image scroller (container for images) */
+    .imageScroller {
+        display: none; /* Still hidden by default, will show on click */
+        max-width: 100%;
+    }
+
+    .show {
+        display:flex;
+    }
+
+    /* Mobile Image Size */
+    .imageScroller img {
+        width: 120px; /* Adjust image size for smaller screens */
+    }
+    
+
+    .item {
+        font-size: 1rem; /* Smaller text for the items */
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+    }
+
+    .item.active {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    /* Adjust phone menu */
+    .phoneMenu {
+        width: 60%; /* Full width of the screen */
+        padding: 20px 10px; /* Adjust padding */
+        margin-top: 100px;
+        margin-left:30px;
+        
+    }
+
+    .phoneMenu.show {
+        display: block;
+    }
+
+    /* Adjust burger menu (phone icon) */
+    .checkmark span {
+        width: 30px; /* Make lines of the burger menu smaller */
+        height: 4px;
+    }
+
+    /* Scale down entire content to fit screen */
+   /* body {
+        transform: scale(1.0); /* Slight zoom out to fit better on smaller screens /*
+        transform-origin: top center; Keep the content centered /*
+    }
+    */
+
+    /* Optional: Adjust image container for the lightbox */
+    #lightbox {
+        /*width: 100%;  /* Fit within 95% of the screen width */
+        /*height: 90vh; /* Fit within 90% of the screen height */
+        /*padding: 10px;
+    }
+
+    #lightbox .lightbox-content {
+        max-width: 90vw;
+        max-height: 80vh;
+    }
+
+    #lightbox img {
+        max-width: 80vw; /* Ensure image is smaller */
+       /* max-height: 70vh;*/
+        object-fit: contain; /* Keep aspect ratio */
+    }
+
+    .prev, .next {
+        font-size: 3rem; /* Smaller navigation buttons */
+        width: 30px;  /* Reduce arrow button size */
+        height: 30px;
+    }
+
+    .close {
+        font-size: 1.8rem;
+        top: 5px;
+        right: 5px;
+        transform: translateX(-250px)
+    }
+
+}
+

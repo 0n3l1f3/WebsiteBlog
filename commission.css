@@ -1,0 +1,137 @@
+.input {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Space between left and right */
+    max-width: 800px; /* Prevents form from stretching too wide */
+    margin: 0 auto; /* Centers the form */
+    border-color: black;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right input{
+    width: 100%;
+    height: 150px;
+}
+
+.left label, .right label {
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit button styling */
+.button {
+    text-align: center;
+    margin: 20px auto;
+    width: 70%; 
+}
+
+.button input {
+    padding: 10px 10px;
+    background-color: #8e8e8e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+}
+
+.button input:hover {
+    background-color: white;
+}
+
+.socialsIcon{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.instagram img, .tiktok img, .twitter img{
+    width: 24px;
+   
+}
+
+.instagram {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+
+}
+.tiktok {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+
+}
+.twitter {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-style: solid;
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+
+}
+
+
+.instagram a, .tiktok a, .twitter a{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .input {
+        display: flex;
+        flex-direction: column;
+        gap: 10px; /* Reduce gap for smaller screens */
+    }
+
+    .right input {
+        height: 100px; /* Reduce input height for better fit */
+    }
+
+    .button {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .socialsIcon {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .instagram, .tiktok, .twitter {
+        width: 80px;
+        height: 30px;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .video iframe{
+        width:500;
+        height:300;
+    
+    }
+}
